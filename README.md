@@ -9,3 +9,5 @@ A major source of information used in this recommendation system is the open sou
 More algorithms and machine learning techniques maybe added to future versions to provide more insightful findings. Please feel free to use or modify the code, would much appreciate acknowledgment to Bardvja if it helped in your pursuit. You may reach me at ukm5@cornell.edu for suggestions/feedback that you may like to be included in the future versions. 
 
 The name Bardvja was inspired from the ancient Vedic myth about the sage Bharadwaja who wished to gather all the knowledge in universe. It is told that he studied every second of his life and wished the Gods to let him continue his life for eons, in hopes of acquiring more wisdom. 
+
+This work has used the amazing library WordNinja[https://github.com/keredson/wordninja], useful in parsing sentences with no spaces, created from this great StackOverflow thread[https://stackoverflow.com/questions/8870261/how-to-split-text-without-spaces-into-list-of-words/11642687#11642687].
