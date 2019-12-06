@@ -1,5 +1,7 @@
 # Bardvja Recommendation System
 
+## About
+
 Bardvja is a content based recommender system, created to identify open source peer-reviewed publications related to one's area of research. It was created to identify research in other subjects or areas that uses techniques and concepts similar to one's primary area of study. Science is a constant pursuit of knowledge and it is often beneficial to avoid re-inventing the wheel. If there is a method or concept that is exploited well in another topic, Bardvja helps you identify such research. It is our hope that Bardvja will help those excited to learn and apply their knowledge to a wide variety of topics.
 
 What makes Bardvja unique is that the only information you must provide is the path to your personal directory of papers, proposals, reports or other files of information in a PDF format. This was primarily inspired by the need to encourage open source papers and to democratize information. 
