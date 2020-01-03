@@ -10,7 +10,7 @@ What makes Bardvja unique is that the only information required is the path to a
 
 A major source of information used in this recommendation system is the open source ArXiv of Cornell University. In this current version, three subject queries are used to acquire information from the ArXiv.
 
-More algorithms and machine learning techniques maybe added to future versions to provide more insightful findings. Please feel free to use, share, or modify the code, would much appreciate acknowledgment to Bardvja if it helped in your pursuit. You may reach me at ukm5@cornell.edu for suggestions/feedback that you may like to be included in the future versions. Please fork the original repository at my Github [profile](www.github.com/ukm5).
+More algorithms and machine learning techniques maybe added to future versions to provide more insightful findings. Please feel free to use, share, or modify the code, would much appreciate acknowledgment to Bardvja if it helped in your pursuit. You may reach me at ukm5@cornell.edu for suggestions/feedback that you may like to be included in the future versions. Please fork the original repository at my Github [profile](https://github.com/ukm5).
 
 The name Bardvja was inspired from the ancient Vedic myth about the sage Bharadwaja who wished to gather all the knowledge in universe. It is believed that he studied every moment of his life, wishing the Gods to let him continue his life in hopes of acquiring all the knowledge. 
 
@@ -30,7 +30,7 @@ If you are in an enviroment containing Python 3, proceed to install the dependen
 
 For those keen on avoiding installing libraries in your primary enviroment, consider the following to create a virtual conda environment. More detailed information may be found [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
 
-To create and activate a virtual conda environment named bardvja (look into [Anaconda](https://www.anaconda.com) documentation and installations):
+To create and activate a virtual conda environment named bardvja (look into [Anaconda](https://www.anaconda.com) documentation and installation for more information on conda):
 
 `conda create --name bardvja`
 
@@ -104,6 +104,6 @@ The Jupyter notebooks with `.ipynb` extension is also provided for those interes
 
 ## Feedback and Questions
 
-Please feel free to provide feedbacks, suggestions, comments or questions to Udayshankar Menon at <ukm5@cornell.edu> or at [LinkedIn](www.linkedin.com/in/udayshankarmenon).
+Please feel free to provide feedbacks, suggestions, comments or questions to Udayshankar Menon at <ukm5@cornell.edu> or at [LinkedIn](https://www.linkedin.com/in/udayshankarmenon/).
 
 
