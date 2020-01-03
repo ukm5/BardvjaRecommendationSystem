@@ -8,7 +8,7 @@ import pickle
 import joblib
 import pandas as pd
 from scipy import sparse
-from global_params import search_queries, path_to_arxiv_data, path_to_trained_models
+from global_params import search_queries, path_to_arxiv_data, path_to_trained_models, max_papers_to_be_scraped
 
 def pre_processing_pdf_text(df):
     import pandas as pd
@@ -84,10 +84,10 @@ def transform_abstracts_to_vectors(df):
 
 for search_query in search_queries:
     print(f"Creating normalized vectors for the {search_query}")
-    df_arxiv = pd.read_csv(f'{path_to_arxiv_data}arxiv_{search_query}_30000.csv')
+    df_arxiv = pd.read_csv(f'{path_to_arxiv_data}arxiv_{search_query}_{max_papers_to_be_scraped}.csv')
     pre_processing_pdf_text(df_arxiv)
-    df_arxiv.to_csv(f'{path_to_arxiv_data}arxiv_{search_query}_30000_preprocessed.csv', index=False)
-    df_arxiv = pd.read_csv(f'{path_to_arxiv_data}arxiv_{search_query}_30000_preprocessed.csv')
+    df_arxiv.to_csv(f'{path_to_arxiv_data}arxiv_{search_query}_{max_papers_to_be_scraped}_preprocessed.csv', index=False)
+    df_arxiv = pd.read_csv(f'{path_to_arxiv_data}arxiv_{search_query}_{max_papers_to_be_scraped}_preprocessed.csv')
     Z = transform_abstracts_to_vectors(df_arxiv)
     Z_sparse = sparse.csr_matrix(Z)
     sparse.save_npz(f'{path_to_arxiv_data}normalized_arxiv_paper_vectors_{search_query}.npz', matrix=Z_sparse)

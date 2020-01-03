@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import time
 import os
-from global_params import search_queries, path_to_arxiv_data
+from global_params import search_queries, path_to_arxiv_data, max_papers_to_be_scraped, max_papers_in_single_call
 import sys
 
 if not (os.path.isdir(f'{path_to_arxiv_data}')):
@@ -50,7 +50,7 @@ def one_big_scraping_function(query):
         return url
 
     # Parsing the page with paper info
-    def scraping_arxiv(total_papers = 10000, max_results=2000, search_query = 'all:physics+OR+mathematics+OR+biology+OR+statistics+OR+politics'):
+    def scraping_arxiv(total_papers = max_papers_to_be_scraped, max_results=max_papers_in_single_call, search_query = 'all:physics+OR+mathematics+OR+biology+OR+statistics+OR+politics'):
         for i in list(range(0, total_papers, max_results)):
             start = i
             res = requests.get(url_to_scrape(start = start,max_results = max_results, search_query = search_query))
@@ -97,7 +97,7 @@ def one_big_scraping_function(query):
         return df_dict
 
     # Submitting request to scrape different pages
-    for obj in scraping_arxiv(total_papers=30000, max_results=2000, search_query=f'all:{query}'):
+    for obj in scraping_arxiv(total_papers=max_papers_to_be_scraped, max_results=max_papers_in_single_call, search_query=f'all:{query}'):
         create_dict(obj, df_dict)
         time.sleep(3)
 
@@ -108,7 +108,7 @@ def one_big_scraping_function(query):
     df_arxiv.drop_duplicates(subset='title', inplace=True)
 
     # Creating a csv file
-    df_arxiv.to_csv(f'{path_to_arxiv_data}arxiv_{query}_30000.csv', index = False)
+    df_arxiv.to_csv(f'{path_to_arxiv_data}arxiv_{query}_{max_papers_to_be_scraped}.csv', index = False)
     
 
 for query in search_queries:

@@ -9,7 +9,7 @@ from scipy import sparse
 import joblib
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
-from global_params import search_queries, path_to_arxiv_data, path_to_training_data, path_to_trained_models
+from global_params import search_queries, path_to_arxiv_data, path_to_training_data, path_to_trained_models, max_papers_to_be_scraped
 import sys
 
 print(" Bardvja is thinking ...")
@@ -32,7 +32,7 @@ pd.options.display.max_rows = 1000
 
 # Read in the data files for arxiv and the local papers
 df_local = pd.read_csv(f'{path_to_training_data}local_papers.csv')
-df_to_concat = [pd.read_csv(f'{path_to_arxiv_data}arxiv_{query}_30000.csv') for query in search_queries]
+df_to_concat = [pd.read_csv(f'{path_to_arxiv_data}arxiv_{query}_{max_papers_to_be_scraped}.csv') for query in search_queries]
 df_arxiv = pd.concat(df_to_concat, join='outer')
 
 # Load the normalized vectors
