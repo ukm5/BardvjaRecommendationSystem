@@ -52,7 +52,7 @@ To remove the virtual environment
 
 Navigate to the folder containing Bardvja and make the following changes in `global_params.py`. Provide the path to the directory on your local machine containing PDF files. Ensure the path is provided and not empty. 
 
-`path_to_papers_train = 'path-to-directory/papers_train/'`
+`path_to_papers_train = 'path-to-directory-of-papers-to-train/'`
 
 Provide additional paths to avoid folders created in the current directory here:
 `path_to_training_data = './training_data/'`
