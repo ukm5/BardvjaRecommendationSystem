@@ -75,15 +75,15 @@ Add words that you wish to search for papers in the arXiv. For example, to scrap
 
 Bardvja involves 3 essential tasks for the recommender system to function. 
 
-###### Parsing the local PDF
+##### Parsing the local PDF
 
 Bardvja uses a PyPDF2 and a few NLP libraries to help parse the PDF files and identify the vocabulary unique to these papers. These steps are described in `pdf_reader.py`. If you are interested in using PyPDF2 and these libraries to parse PDF files for other projects, feel free to use functions in this code. 
 
-###### Scraping the arXiv using API
+##### Scraping the arXiv using API
 
 In this step, the Cornell University arXiv is scraped to gather a large number of publications using the search queries mentioned above. These queries may be tuned in the `global_params.py`. The API and its usage is provided in the `arXiv_api.py`. This script contains the necessary functions in Bardvja to scrape the arXiv. 
 
-###### Make recommendations
+##### Make recommendations
 
 Once the vocabulary for the local papers are identified, every paper in the directory is converted to a vector using the bag of words approach. Using the local vocabulary, a similar vector space representation of the arXiv papers are obtained. 
 Finally, the recommendations are made from arXiv by calculating kernels that describe vector similarity. These aspects of the system are contained in `arxiv_data_vectors.py` and `recommender.py`. 
