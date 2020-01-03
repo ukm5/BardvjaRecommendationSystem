@@ -56,7 +56,7 @@ df_arxiv['cosine_similarity_maximizer'] = cos_maximizer
 
 df_arxiv_arranged = df_arxiv.sort_values(by='cosine_similarity_maximizer', ascending=False).drop_duplicates()
 df_arxiv_arranged.reset_index(drop=True, inplace=True)
-df_arxiv_arranged.to_csv(f'{path_to_arxiv_data}df_arxiv_arranged.csv', index=False)
+df_arxiv_arranged.to_csv(f'{path_to_arxiv_data}df_arxiv_arranged_{max_papers_to_be_scraped}.csv', index=False)
 
 vocab = joblib.load(f'{path_to_trained_models}cvec_vocabulary')
 

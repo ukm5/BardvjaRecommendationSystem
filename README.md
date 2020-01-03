@@ -30,7 +30,7 @@ If you are in an enviroment containing Python 3, proceed to install the dependen
 
 For those keen on avoiding installing libraries in your primary enviroment, consider the following to create a virtual conda environment. More detailed information may be found here[https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html].
 
-To create and activate a virtual conda environment named bardvja:
+To create and activate a virtual conda environment named bardvja (look into [Anaconda](https://www.anaconda.com) documentation and installations):
 
 `conda create --name bardvja`
 

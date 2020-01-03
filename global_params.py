@@ -6,8 +6,8 @@ print("\n\t\t\tWelcome to Bardvja's ashram ...\n")
 # The module arXiv_api does this and you can make changes to your requirement there if necessary.
 search_queries = ['physics','fluid','particle']
 
-max_papers_to_be_scraped = 1000 # maximum that could scraped in a single API call is 30000
-max_papers_in_single_call = 2000 # maximum that can be scraped using arXiv API at a time
+max_papers_to_be_scraped = 30000 # maximum that could scraped in a single API call is 30000
+max_papers_in_single_call = 2000 # maximum that can be scraped using arXiv API at a time is 2000
 
 # Change paths to each folders as necessary. 
 path_to_papers_train = './../capstone/papers_train/'
