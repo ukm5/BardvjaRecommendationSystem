@@ -40,6 +40,14 @@ To install the dependencies for Bardvja Recommender System in the virtual enviro
 
 `pip install --user --requirement requirements.txt`
 
+To deactivate the environment and return to your primary environment
+
+`conda deactivate bardvja`
+
+To remove the virtual environment
+
+`conda env remove --name bardvja`
+
 #### Settling the paths and inputs
 
 Navigate to the folder containing Bardvja and make the following changes in `global_params.py`. Provide the path to the directory on your local machine containing PDF files. Ensure the path is provided and not empty. 
@@ -47,11 +55,11 @@ Navigate to the folder containing Bardvja and make the following changes in `glo
 `path_to_papers_train = 'path-to-directory/papers_train/'`
 
 Provide additional paths to avoid folders created in the current directory here:
-`
-path_to_training_data = './training_data/'
-path_to_trained_models = './trained_models/'
-path_to_arxiv_data = './arxiv_data/'
-`
+`path_to_training_data = './training_data/'`
+
+`path_to_trained_models = './trained_models/'`
+
+`path_to_arxiv_data = './arxiv_data/'`
 
 The number of paper that are scraped from the arXiv may be modified in `global_params.py`. For adding more queries into the API refer to `arXiv_api.py` and the Cornell University arXiv API Help[https://arxiv.org/help/api].
 
@@ -62,5 +70,19 @@ Bardvja makes recommendations by scraping abstracts from the Cornell University 
 Add words that you wish to search for papers in the arXiv. For example, to scrape papers under the category of physics, fluid, and particle
 
 `search_queries = ['physics','fluid','particle']`
+
+## Recommender system
+
+To start Bardvja recommender system, navigate to the location of `main.py` using command line and execute
+
+`python main.py`
+
+This runs the recommender system in a verbose manner. It takes up to half hour to make recommendation from a total of 70000 scraped papers. 
+Once the recommender engine completes, top 10 papers are printed out on the terminal, but the entire list of scraped papers is stored as a csv file at `path-to-arxiv-data/df_arxiv_arranged.csv`. 
+Consider using Pandas to easily navigate this file. 
+
+## Feedback and Questions
+
+Please feel free to provide feedbacks, suggestions, comments or questions to Udayshankar Menon at ukm5@cornell.edu
 
 
