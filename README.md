@@ -87,6 +87,6 @@ The Jupyter notebooks with `.ipynb` extension is also provided for those interes
 
 ## Feedback and Questions
 
-Please feel free to provide feedbacks, suggestions, comments or questions to Udayshankar Menon at ukm5@cornell.edu
+Please feel free to provide feedbacks, suggestions, comments or questions to Udayshankar Menon at ukm5@cornell.edu or at www.linkedin.com/in/udayshankarmenon
 
 
