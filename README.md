@@ -63,7 +63,7 @@ Provide additional paths to avoid folders created in the current directory here:
 
 The number of paper that are scraped from the arXiv may be modified in `global_params.py`. For adding more queries into the API refer to `arXiv_api.py` and the Cornell University arXiv API Help[https://arxiv.org/help/api].
 
-##### Search queries
+#### Search queries
 
 Bardvja makes recommendations by scraping abstracts from the Cornell University arXiv using search queries. Using an editor of choice edit the `global_params.py`.
 
@@ -72,6 +72,23 @@ Add words that you wish to search for papers in the arXiv. For example, to scrap
 `search_queries = ['physics','fluid','particle']`
 
 ## Recommender system
+
+Bardvja involves 3 essential tasks for the recommender system to function. 
+
+###### Parsing the local PDF
+
+Bardvja uses a PyPDF2 and a few NLP libraries to help parse the PDF files and identify the vocabulary unique to these papers. These steps are described in `pdf_reader.py`. If you are interested in using PyPDF2 and these libraries to parse PDF files for other projects, feel free to use functions in this code. 
+
+###### Scraping the arXiv using API
+
+In this step, the Cornell University arXiv is scraped to gather a large number of publications using the search queries mentioned above. These queries may be tuned in the `global_params.py`. The API and its usage is provided in the `arXiv_api.py`. This script contains the necessary functions in Bardvja to scrape the arXiv. 
+
+###### Make recommendations
+
+Once the vocabulary for the local papers are identified, every paper in the directory is converted to a vector using the bag of words approach. Using the local vocabulary, a similar vector space representation of the arXiv papers are obtained. 
+Finally, the recommendations are made from arXiv by calculating kernels that describe vector similarity. These aspects of the system are contained in `arxiv_data_vectors.py` and `recommender.py`. 
+
+#### How to operate Bardvja?
 
 To start Bardvja recommender system, navigate to the location of `main.py` using command line and execute
 
