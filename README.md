@@ -81,6 +81,10 @@ This runs the recommender system in a verbose manner. It takes up to half hour t
 Once the recommender engine completes, top 10 papers are printed out on the terminal, but the entire list of scraped papers is stored as a csv file at `path-to-arxiv-data/df_arxiv_arranged.csv`. 
 Consider using Pandas to easily navigate this file. 
 
+## Jupyter Notebooks
+
+The Jupyter notebooks with `.ipynb` extension is also provided for those interested in modifying or operating the recommender system in an interactive manner. 
+
 ## Feedback and Questions
 
 Please feel free to provide feedbacks, suggestions, comments or questions to Udayshankar Menon at ukm5@cornell.edu
