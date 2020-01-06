@@ -10,7 +10,7 @@ max_papers_to_be_scraped = 100 # maximum that could scraped in a single API call
 max_papers_in_single_call = 2000 # maximum that can be scraped using arXiv API at a time is 2000
 
 # Change paths to each folders as necessary. 
-path_to_papers_train = './papers_train2/'
+path_to_papers_train = './papers_train/'
 path_to_training_data = './training_data/'
 path_to_trained_models = './trained_models/'
 path_to_arxiv_data = './arxiv_data/'
