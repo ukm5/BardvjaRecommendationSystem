@@ -118,14 +118,16 @@ def transform_abstracts_to_vectors(df, custom_stop_words=['a']):
     X_vec_ss = ss.fit_transform(X_vec.toarray())
     # Save the StandardScaler for later
     joblib.dump(ss, f'{path_to_trained_models}standard_scaler.sav')
-    
+
+#****** Clustering to get more accurate parameters *********
+     
     k_cluster = KMeans(n_clusters=3, random_state=42, n_jobs=-1)
     k_cluster.fit(X_vec_ss)
     # Save the KMeans cluster for later
-    joblib.dump(k_cluster, f'{path_to_trained_models}kmeans_cluster.sav')
-    
+    joblib.dump(k_cluster, f'{path_to_trained_models}kmeans_cluster.sav') 
     df['cluster_label'] = k_cluster.predict(X_vec_ss)
     X_vec = np.append(X_vec.toarray(),df['cluster_label'].values.reshape(-1,1), axis=1)
+
     X_normal = normalize(sparse.csr_matrix(X_vec)).toarray()
     
     return X_normal
