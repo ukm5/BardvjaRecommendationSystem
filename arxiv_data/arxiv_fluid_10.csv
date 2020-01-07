@@ -1,0 +1,90 @@
+title,id,authors,abstract,journal,published
+Visualization of Word Usage in Fluid Mechanics Abstracts,http://arxiv.org/abs/0910.2968v1,"['Eric Mockensturm', 'Kendra Sharp']","  The fluid dynamics video linked in the document shows how `keywords' from
+abstracts contained in three journals--Physics of Fluids (A) from 1970,
+Experiments in Fluids from 1983, and Journal of Fluid Mechanics from 1954--have
+changed over time.
+",None,2009-10-15 19:09:23+00:00
+Kinematic Description of Ricci Solitons in Fluid Spacetimes,http://arxiv.org/abs/1709.02138v2,['Umber Sheikh'],"  We consider the kinematics of specific fluid spacetimes admitting timelike
+congruences of Ricci Solitons. These fluids includes string cloud, string
+fluid, perfect fluid, radially symmetric fluid, anisotropic fluid and
+relativistic magneto-fluid. Results are obtained and important physical aspects
+are discussed.
+",None,2017-09-07 08:48:29+00:00
+Symmetric hyperbolic Euler equations for relativistic perfect fluids,http://arxiv.org/abs/astro-ph/0502233v1,['Ronald A. Walton'],"  The Euler equations governing a relativistic perfect fluid are put into
+symmetric hyperbolic form with dependent variables the fluid's specific entropy
+plus a generalized velocity vector equal to the fluid's unit relativistic
+velocity vector divided pointwise by the fluid's specific enthalpy.
+",None,2005-02-11 05:00:00+00:00
+"Metastability and nucleation in the dilute fluid phase of a simple model
+  of globular proteins",http://arxiv.org/abs/cond-mat/9912199v1,['Richard P. Sear'],"  The dilute fluid phase of model globular proteins is studied. The model
+possesses a fluid-fluid transition buried within the fluid-crystal coexistence
+region, as do some globular proteins. If this fluid-fluid transition is not
+buried deep inside the fluid-crystal coexistence region the crystalline phase
+does not nucleate within the dilute fluid. We link this lack of nucleation of
+the crystal to the interactions in our model and speculate that similar
+interactions between globular proteins are responsible for the difficulty found
+in crystallising many globular proteins.
+",None,1999-12-11 13:38:32+00:00
+"Supercooled fluid-fluid phase transition in three dimensions from a
+  soft-core potential",http://arxiv.org/abs/cond-mat/0005184v2,"['G. Franzese', 'G. Malescio', 'A. Skibinsky', 'S. V. Buldyrev', 'H. E. Stanley']","  To study the possibility of a fluid-fluid phase transition, we analyze a
+three-dimensional soft-core isotropic potential for a one-component system. We
+utilize two independent numerical approaches, (i) integral equation in the
+hypernetted-chain approximation and (ii) molecular dynamics simulations, and
+find for both approaches a fluid-fluid phase transition as well as the
+conventional gas-liquid critical point. We also study the possible existence of
+a triple point in the supercooled fluid phase at which three phases---gas,
+high-density fluid, and low-density fluid---coexist.
+",None,2000-05-11 21:55:28+00:00
+Fluid dynamics and jamming in a dilatant fluid,http://arxiv.org/abs/1010.5063v1,"['Hiizu Nakanishi', 'Namiko Mitarai']","  We present a phenomenological fluid dynamics model for a dilatant fluid, i.e.
+a severe shear thickening fluid, by introducing a state variable. The
+Navier-Stokes equation is coupled with the state variable field, which evolves
+in response to the local shear stress as the fluid is sheared. The viscosity is
+assumed to depend upon the state variable and to diverge at a certain value due
+to jamming. We demonstrate that the coupling of the fluid dynamics with the
+shear thickening leads to an oscillatory instability in the shear flow. The
+model also shows a peculiar response of the fluid to a strong external impact.
+",None,2010-10-25 09:18:51+00:00
+"The cost of swimming in generalized Newtonian fluids: Experiments with
+  C. elegans",http://arxiv.org/abs/1610.05811v1,"['David A. Gagnon', 'Paulo E. Arratia']","  Numerous natural processes are contingent on microorganisms' ability to swim
+through fluids with non-Newtonian rheology. Here, we use the model organism
+Caenorhabditis elegans and tracking methods to experimentally investigate the
+dynamics of undulatory swimming in shear-thinning fluids. Theory and simulation
+have proposed that the cost of swimming, or mechanical power, should be lower
+in a shear-thinning fluid compared to a Newtonian fluid of the same zero-shear
+viscosity. We aim to provide an experimental investigation into the cost of
+swimming in a shear-thinning fluid from (i) an estimate of the mechanical power
+of the swimmer and (ii) the viscous dissipation rate of the flow field, which
+should yield equivalent results for a self-propelled low Reynolds number
+swimmer. We find the cost of swimming in shear-thinning fluids is less than or
+equal to the cost of swimming in Newtonian fluids of the same zero-shear
+viscosity; furthermore, the cost of swimming in shear-thinning fluids scales
+with a fluid's effective viscosity and can be predicted using fluid rheology
+and simple swimming kinematics. Our results agree reasonably well with previous
+theoretical predictions and provide a framework for understanding the cost of
+swimming in generalized Newtonian fluids.
+","J. Fluid Mech. (2016), vol. 800, pp. 753-765",2016-10-18 21:57:27+00:00
+"On the classification of incompressible fluids and a mathematical
+  analysis of the equations that govern their motion",http://arxiv.org/abs/1902.04853v2,"['Jan Blechta', 'Josef Málek', 'K. R. Rajagopal']","  In the first part of the paper we provide a new classification of
+incompressible fluids characterized by a continuous monotone relation between
+the velocity gradient and the Cauchy stress. The considered class includes
+Euler fluids, Navier-Stokes fluids, classical power-law fluids as well as
+stress power-law fluids, and their various generalizations including the fluids
+that we refer to as activated fluids, namely fluids that behave as an Euler
+fluid prior activation and behave as a viscous fluid once activation takes
+place. We also present a classification concerning boundary conditions that are
+viewed as the constitutive relations on the boundary. In the second part of the
+paper, we develop a robust mathematical theory for activated Euler fluids
+associated with different types of the boundary conditions ranging from no-slip
+to freeslip and include Navier's slip as well as stick-slip. Both steady and
+unsteady flows of such fluids in three-dimensional domains are analyzed.
+",None,2019-02-13 10:52:24+00:00
+Flows in inkjet-printed aqueous rivulets,http://arxiv.org/abs/1310.3393v1,"['Vadim Bromberg', 'Timothy J. Singler']","  We used optical microscopy to investigate flows inside water rivulets that
+were inkjet-printed onto different surfaces and under different ambient
+conditions. The acquired fluid dynamics videos were submitted to the 2013
+Gallery of Fluid Motion.
+",None,2013-10-12 15:33:21+00:00
+Stirring faces: mixing in a quiescent fluid,http://arxiv.org/abs/1210.3747v1,"['Steven L. Brunton', 'Clarence W. Rowley']","  This fluid dynamics video depicts the mixing that occurs as a two-dimensional
+flat plate plunges sinusoidally in a quiescent fluid. Finite-time Lyapunov
+exponents reveal sets that are attracting or repelling. As the flow field
+develops, strange faces emerge.
+",None,2012-10-13 23:51:09+00:00

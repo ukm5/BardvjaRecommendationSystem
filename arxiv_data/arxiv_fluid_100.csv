@@ -3423,20 +3423,20 @@ dilatancy-induced fluid pressure drops might be a widespread phenomenon in the
 crust, counteracting thermal pressurisation as a weakening mechanisms in
 freshly fractured rock.
 ",None,2019-04-24 16:21:48+00:00
-Machine Learning for Fluid Mechanics,http://arxiv.org/abs/1905.11075v2,"['Steven Brunton', 'Bernd Noack', 'Petros Koumoutsakos']","  The field of fluid mechanics is rapidly advancing, driven by unprecedented
-volumes of data from experiments, field measurements, and large-scale
-simulations at multiple spatiotemporal scales. Machine learning presents us
-with a wealth of techniques to extract information from data that can be
-translated into knowledge about the underlying fluid mechanics. Moreover,
-machine learning algorithms can augment domain knowledge and automate tasks
-related to flow control and optimization. This article presents an overview of
-past history, current developments, and emerging opportunities of machine
-learning for fluid mechanics. We outline fundamental machine learning
-methodologies and discuss their uses for understanding, modeling, optimizing,
-and controlling fluid flows. The strengths and limitations of these methods are
-addressed from the perspective of scientific inquiry that links data with
-modeling, experiments, and simulations. Machine learning provides a powerful
-information processing framework that can augment, and possibly even transform,
+Machine Learning for Fluid Mechanics,http://arxiv.org/abs/1905.11075v3,"['Steven Brunton', 'Bernd Noack', 'Petros Koumoutsakos']","  The field of fluid mechanics is rapidly advancing, driven by unprecedented
+volumes of data from field measurements, experiments and large-scale
+simulations at multiple spatiotemporal scales. Machine learning offers a wealth
+of techniques to extract information from data that could be translated into
+knowledge about the underlying fluid mechanics. Moreover, machine learning
+algorithms can augment domain knowledge and automate tasks related to flow
+control and optimization. This article presents an overview of past history,
+current developments, and emerging opportunities of machine learning for fluid
+mechanics. It outlines fundamental machine learning methodologies and discusses
+their uses for understanding, modeling, optimizing, and controlling fluid
+flows. The strengths and limitations of these methods are addressed from the
+perspective of scientific inquiry that considers data as an inherent part of
+modeling, experimentation, and simulation. Machine learning provides a powerful
+information processing framework that can enrich, and possibly even transform,
 current lines of fluid mechanics research and industrial applications.
 ",None,2019-05-27 09:26:17+00:00
 Modelling ternary fluids in contact with elastic membranes,http://arxiv.org/abs/1906.03065v1,"['Marianna Pepona', 'Alvin C. M. Shek', 'Ciro Semprebon', 'Timm Krüger', 'Halim Kusumaatmaja']","  We present a thermodynamically consistent model of a ternary fluid

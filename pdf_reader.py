@@ -9,9 +9,10 @@
 import pdf_reader as pdfr
 import numpy as np
 import pandas as pd
+import sys
 import pickle, pickleshare
 from scipy import sparse
-import pickle 
+import pickle
 import joblib
 from sklearn.metrics.pairwise import cosine_similarity
 import os
@@ -41,6 +42,14 @@ def make_training_dataframe(path_to_training_papers):
     import pandas as pd
 
     train_data = {}
+    list_papers_train = os.listdir(path_to_training_papers)
+    list_papers_train.remove('.DS_Store')
+
+    if list_papers_train == [] :
+        print(f"No parsable PDF found at the directory of local papers located at {path_to_training_papers}")
+        print("Please add more PDF files to let Bardvja ponder.")
+        sys.exit()
+
     for idx, filename in enumerate(os.listdir(path_to_training_papers)):
         if filename != '.DS_Store':
             path_to_pdf = path_to_training_papers+filename
@@ -86,13 +95,13 @@ def transform_abstracts_to_vectors(df, custom_stop_words=['a']):
     import string
     import pickle
     import joblib
-    
+
     X = df['complete_pdf']
     porter = PorterStemmer()
     stop_words_english = list(map(porter.stem, ENGLISH_STOP_WORDS))
     custom_stop_words = list(map(porter.stem, custom_stop_words))
     stop_words_english += custom_stop_words
-    
+
     chars = [c for c in string.ascii_lowercase]
     stop_words_english += chars
     for i in chars:
@@ -103,38 +112,56 @@ def transform_abstracts_to_vectors(df, custom_stop_words=['a']):
         joblib.dump(stop_words_english, f'{path_to_trained_models}stop_words_english')
     except:
         print("Raised error trying to write stop_words_english!")
-    
+
+    min_df = min(5, X.shape[0])
+    print("minimum df",min_df)
     cvec = CountVectorizer(max_features=500, stop_words=stop_words_english, min_df=5, max_df=0.9)
     tvec = TfidfVectorizer(max_features=500, stop_words=stop_words_english, min_df=5, max_df=0.9)
 
-    X_vec = cvec.fit_transform(X)
-    X_vec2 = tvec.fit_transform(X)   
+    try:
+        X_vec = cvec.fit_transform(X)
+        X_vec2 = tvec.fit_transform(X)
+    except:
+        cvec = CountVectorizer(stop_words=stop_words_english)
+        tvec = TfidfVectorizer(stop_words=stop_words_english)
+        X_vec = cvec.fit_transform(X)
+        X_vec2 = tvec.fit_transform(X)
+
     joblib.dump(cvec.vocabulary_, f'{path_to_trained_models}cvec_vocabulary')
     # Save the Vectorizer models for later
     joblib.dump(cvec, f'{path_to_trained_models}count_vectorizer.sav')
     joblib.dump(tvec, f'{path_to_trained_models}tfidf_vectorizer.sav')
-    
+
     ss = StandardScaler()
     X_vec_ss = ss.fit_transform(X_vec.toarray())
     # Save the StandardScaler for later
     joblib.dump(ss, f'{path_to_trained_models}standard_scaler.sav')
 
 #****** Clustering to get more accurate parameters *********
-     
-    k_cluster = KMeans(n_clusters=3, random_state=42, n_jobs=-1)
+    n_clusters=min(3, X_vec_ss.shape[0])
+    print('clusters in KMeans : ',n_clusters)
+    k_cluster = KMeans(n_clusters, random_state=42, n_jobs=-1)
     k_cluster.fit(X_vec_ss)
     # Save the KMeans cluster for later
-    joblib.dump(k_cluster, f'{path_to_trained_models}kmeans_cluster.sav') 
+    joblib.dump(k_cluster, f'{path_to_trained_models}kmeans_cluster.sav')
     df['cluster_label'] = k_cluster.predict(X_vec_ss)
     X_vec = np.append(X_vec.toarray(),df['cluster_label'].values.reshape(-1,1), axis=1)
 
     X_normal = normalize(sparse.csr_matrix(X_vec)).toarray()
-    
+    if (X_normal.shape[0]==0 or X_normal.shape[1]==0):
+        print("Add more papers to train the recommendation model and try again!")
+        sys.exit()
+
     return X_normal
+
+# The code body starts here. All defined functions above this line.
 
 if not os.path.isdir(f'{path_to_papers_train}'):
     print(f"Please ensure the directory with pdfs to be trained on is at {path_to_papers_train}")
     os.mkdir(f'{path_to_papers_train}')
+    print(f"\nA new directory to store the local papers to base the recommendations on, is created at {path_to_papers_train}")
+    print(f"\nAdd the papers of interest to this directory. More papers better the results!")
+    sys.exit()
 
 if not os.path.isdir(f'{path_to_training_data}'):
     print(f"Creating folder to keep training data at {path_to_training_data}")
@@ -143,7 +170,6 @@ if not os.path.isdir(f'{path_to_training_data}'):
 if not os.path.isdir(f'{path_to_trained_models}'):
     print(f"Creating folder to keep trained models at {path_to_trained_models}")
     os.mkdir(f'{path_to_trained_models}/')
-
 
 df = make_training_dataframe(f'{path_to_papers_train}')
 
@@ -171,7 +197,3 @@ print('\n Completed processing and training on the local papers! \n')
 
 
 # In[ ]:
-
-
-
-

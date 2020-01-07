@@ -1,0 +1,148 @@
+title,id,authors,abstract,journal,published
+"Predicting the impact of particle-particle collisions on turbophoresis
+  with a reduced number of computational particles",http://arxiv.org/abs/1908.02869v1,['Perry L. Johnson'],"  A common feature of wall-bounded turbulent particle-laden flows is enhanced
+particle concentrations in a thin layer near the wall due to a phenomenon known
+as turbophoresis. Even at relatively low bulk volume fractions,
+particle-particle collisions regulate turbophoresis in a critical way, making
+simulations sensitive to collisional effects. Lagrangian tracking of every
+particle in the flow can become computationally expensive when the physical
+number of particles in the system is large. Artificially reducing the number of
+particles in the simulation can mitigate the computational cost. When
+particle-particle collisions are an important aspect determining the simulation
+outcome, as in the case when turbophoresis plays an active role, simply
+reducing the number of particles in the simulation significantly alters the
+computed particle statistics. This paper introduces a computational particle
+treatment for particle-particle collisions which reproduces the results of a
+full simulation with a reduced number of particles. This is accomplished by
+artificially enhancing the particle collision radius based on scaling laws for
+the collision rates. The proposed method retains the use of deterministic
+collision models and is applicable for both low and high Stokes number regimes.
+",None,2019-08-07 23:15:16+00:00
+Identical Particles in Quantum Mechanics,http://arxiv.org/abs/0910.4642v2,['Andrea Lubberdink'],"  If, in a system of identical particles, the one particle state is defined by
+the partial trace to one of the component spaces of the total Hilbert space,
+then all one particle states are identical. The particles are
+indistinguishable. This is often thought to be a typical quantum mechanical
+phenomenon. I will show however that an analogous procedure to define particle
+states exists in classical mechanics, which results in classical
+indistinguishable identical particles. From this analogy it follows that the
+indistinguishability of identical particles depends on how we define particle
+states. It is not an inevitable result of the symmetry postulate.
+  Indeed, if particles are defined by partial traces, consistent use of the
+symmetry postulate leads to the conclusion that all identical particles in the
+universe are indistinguishable, so that particles can never be pointed at, not
+even in the classical limit. This does not correspond to the way the term
+particle is actually used in practice. I will argue that a particle should be
+defined in such a way that in the classical limit the quantum particle state
+becomes the state of a classical particle. This will lead us to a definition of
+particles which is in line with the way the term particle is actually used by
+physicists.
+",None,2009-10-24 11:22:49+00:00
+One-Particle and Few-Particle Billiards,http://arxiv.org/abs/nlin/0508037v2,"['Steven Lansel', 'Mason A. Porter', 'Leonid A. Bunimovich']","  We study the dynamics of one-particle and few-particle billiard systems in
+containers of various shapes. In few-particle systems, the particles collide
+elastically both against the boundary and against each other. In the
+one-particle case, we investigate the formation and destruction of resonance
+islands in (generalized) mushroom billiards, which are a recently discovered
+class of Hamiltonian systems with mixed regular-chaotic dynamics. In the
+few-particle case, we compare the dynamics in container geometries whose
+counterpart one-particle billiards are integrable, chaotic, and mixed. One of
+our findings is that two-, three-, and four-particle billiards confined to
+containers with integrable one-particle counterparts inherit some integrals of
+motion and exhibit a regular partition of phase space into ergodic components
+of positive measure. Therefore, the shape of a container matters not only for
+noninteracting particles but also for interacting particles.
+",None,2005-08-30 13:30:45+00:00
+"Fluid particle dynamics: a synthesis of dissipative particle dynamics
+  and smoothed particle dynamics",http://arxiv.org/abs/cond-mat/9705230v1,['Pep Español'],"  We present a generalization of dissipative particle dynamics that includes
+shear forces between particles. The new algorithm has the same structure as the
+(isothermal) smoothed particle dynamics algorithm, except that it conserves
+angular momentum and includes thermal fluctuations consistently with the
+principles of equilibrium statistical mechanics. This clarifies the connection
+of dissipative particle dynamics with numerical resolution algorithms of the
+macroscopic Navier-Stokes equations.
+",None,1997-05-22 15:42:51+00:00
+An Underlying Asymmetry within Particle-size Segregation,http://arxiv.org/abs/1501.06879v2,"['Kasper van der Vaart', 'Parmesh Gajjar', 'Gaël Epely-Chauvin', 'Nicolas Andreini', 'J. M. N. T. Gray', 'Christophe Ancey']","  We experimentally study particle scale dynamics during segregation of a
+bidisperse mixture under oscillatory shear. Large and small particles show an
+underlying asymmetry that is dependent on the local particle concentration,
+with small particles segregating faster in regions of many large particles and
+large particles segregating slower in regions of many small particles. We
+quantify the asymmetry on bulk and particle scales, and capture it
+theoretically. This gives new physical insight into segregation and reveals a
+similarity with sedimentation, traffic flow and particle diffusion.
+",None,2015-01-27 19:31:18+00:00
+Electromagnetic Radiation and Motion of Real Particle,http://arxiv.org/abs/astro-ph/0008510v2,['Jozef Klacka'],"  Relativistically covariant equation of motion for real dust particle under
+the action of electromagnetic radiation is derived. The particle is neutral in
+charge. Equation of motion is expressed in terms of particle's optical
+properties, standardly used in optics for stationary particles.
+",None,2000-08-31 10:12:35+00:00
+Particle-Particle-String Vertex,http://arxiv.org/abs/hep-th/9609173v1,['Nobuyuki Ishibashi'],"  We study a theory of particles interacting with strings. Considering such a
+theory for Type IIA superstring will give some clue about M-theory. As a first
+step toward such a theory, we construct the particle-particle-string
+interaction vertex generalizing the D-particle boundary state.
+",None,1996-09-21 06:08:01+00:00
+"Two-Particle Circular Billiards Versus Randomly Perturbed One-Particle
+  Circular Billiards",http://arxiv.org/abs/1209.3504v2,"['Sandra Ranković', 'Mason A. Porter']","  We study a two-particle circular billiard containing two finite-size circular
+particles that collide elastically with the billiard boundary and with each
+other. Such a two-particle circular billiard provides a clean example of an
+""intermittent"" system. This billiard system behaves chaotically, but the time
+scale on which chaos manifests can become arbitrarily long as the sizes of the
+confined particles become smaller. The finite-time dynamics of this system
+depends on the relative frequencies of (chaotic) particle-particle collisions
+versus (integrable) particle-boundary collisions, and investigating these
+dynamics is computationally intensive because of the long time scales involved.
+To help improve understanding of such two-particle dynamics, we compare the
+results of diagnostics used to measure chaotic dynamics for a two-particle
+circular billiard with those computed for two types of one-particle circular
+billiards in which a confined particle undergoes random perturbations.
+Importantly, such one-particle approximations are much less computationally
+demanding than the original two-particle system, and we expect them to yield
+reasonable estimates of the extent of chaotic behavior in the two-particle
+system when the sizes of confined particles are small. Our computations of
+recurrence-rate coefficients, finite-time Lyapunov exponents, and
+autocorrelation coefficients support this hypothesis and suggest that studying
+randomly perturbed one-particle billiards has the potential to yield insights
+into the aggregate properties of two-particle billiards, which are difficult to
+investigate directly without enormous computation times (especially when the
+sizes of the confined particles are small).
+","Chaos 23, 013123 (2013)",2012-09-16 16:36:34+00:00
+"Simulation of deterministic energy-balance particle agglomeration in
+  turbulent liquid-solid flows",http://arxiv.org/abs/1701.02346v1,"['Derrick O. Njobuenwu', 'Michael Fairweather']","  An efficient technique to simulate turbulent particle-laden flow at high mass
+loadings within the four-way coupled simulation regime is presented. The
+technique implements large eddy simulation, discrete phase simulation, a
+deterministic treatment of inter-particle collisions and an energy-balanced
+particle agglomeration model. The algorithm to detect inter-particle collisions
+is such that the computational costs scale linearly with the number of
+particles present in the computational domain. On detection of a collision,
+particle agglomeration is tested based on the pre-collision kinetic energy,
+restitution coefficient and the van der Waals' interactions. The performance of
+the technique developed is tested by performing parametric studies of the
+influence the restitution coefficient $(e_{n} = 0.2, 0.4, 0.6$ and $0.8)$,
+particle size ($d_p = 60, 120, 200$ and $316 \mu{m}$), fluid inertia
+($Re_{\tau} = 150, 300$ and $590$) and particle concentration ($\alpha_{p} =
+5.0 \times 10^{-4}, 1.0 \times 10^{-3}$ and $5.0 \times 10^{-3}$) have on
+particle-particle interaction events (collision and agglomeration). The results
+demonstrate that the collision frequency shows a linear dependency on the
+restitution coefficient, while the agglomeration rate shows an inverse
+dependence. Collisions among smaller particles are more frequent and efficient
+in forming agglomerates than those of coarser particles. The particle-particle
+interaction events show a strong dependency on the shear Reynolds number
+$Re_{\tau}$, while increasing the particle concentration effectively enhances
+particle collision and agglomeration. Overall, the sensitivity of the
+particle-particle interaction events to the selected simulation parameters is
+found to influence the population and distribution of the primary particles and
+agglomerates formed.
+",None,2017-01-09 20:56:21+00:00
+"Comparing particle-particle and particle-hole channels of random-phase
+  approximation",http://arxiv.org/abs/1904.06235v1,"['Muhammad N. Tahir', 'Xinguo Ren']","  We present a comparative study of particle-hole and particle-particle
+channels of random-phase approximation (RPA) for molecular dissociations of
+different bonding types. We introduced a \textit{direct} particle-particle RPA
+scheme, in analogy to the \textit{direct} particle-hole RPA formalism, whereby
+the exchange-type contributions are excluded. This allows us to compare the
+behavior of the particle-hole and particle-particle RPA channels on the same
+footing. Our study unravels the critical role of exchange contributions in
+determining behaviors of the two RPA channels for describing stretched
+molecules. We also made an attempt to merge particle-hole RPA and
+particle-particle RPA into a unified scheme, with the double-counting terms
+removed. However, benchmark calculations indicate that a straightforward
+combination of the two RPA channels does not lead to a successful computational
+scheme for describing molecular dissociations.
+","Phys. Rev. B 99, 195149 (2019)",2019-04-12 13:52:35+00:00
