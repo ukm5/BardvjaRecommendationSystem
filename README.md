@@ -40,11 +40,17 @@ To install the dependencies for Bardvja Recommender System in the virtual enviro
 
 `pip install --user --requirement requirements.txt`
 
-To deactivate the environment and return to your primary environment
+###### Run `python main.py` to run the default sample recommender system.
+
+Once Bardvja has made recommendations and you want to deactivate the environment, return to your primary environment by deactivating the virtual environment
 
 `conda deactivate bardvja`
 
-To remove the virtual environment
+To list all the environments in your machine, execute
+
+`conda env list`
+
+To remove the virtual environment, execute
 
 `conda env remove --name bardvja`
 
