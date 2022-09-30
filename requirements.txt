@@ -2,7 +2,7 @@ beautifulsoup4==4.8.1
 certifi==2019.11.28
 chardet==3.0.4
 idna==2.8
-joblib==0.14.1
+joblib==1.2.0
 lxml==4.4.2
 nltk==3.4.5
 numpy==1.18.0
